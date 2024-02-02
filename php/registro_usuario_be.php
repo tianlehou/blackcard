@@ -26,7 +26,7 @@
             exit(); 
         }
 
-    //Verificar que el "usuario" no se repita en la base de datos
+    Verificar que el "usuario" no se repita en la base de datos
     $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario ='$usuario' ");
     
         if(mysqli_num_rows($verificar_usuario) > 0){
@@ -58,4 +58,5 @@
     }
 
     mysqli_close($conexion);
+
 ?>
